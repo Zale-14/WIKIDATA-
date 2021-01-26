@@ -1,17 +1,9 @@
 ## voici un exemple de requête wikidata
 '''sparql 
-PREFIX bd: <http://www.bigdata.com/rdf#>
-PREFIX wikibase: <http://wikiba.se/ontology#>
-PREFIX wd: <http://www.wikidata.org/entity/>
-PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-select distinct ?personneLabel 
-where {
-?personne wdt:P31 wd:Q5 . #pour chercher des personnes humaines
-?personne wdt:P106 wd:Q42973 . #qui occupe la fonction d'architecte
-?personne wdt:P27 wd:Q30 . #qui sont américains
-SERVICE wikibase:label { 
-bd:serviceParam wikibase:language "fr,en"}
-}
+Select DISTINCT ?peinture ?peintureLabel ?lieux ?lieuxLabel
+      where { ?peinture wdt:P170 wd:Q296. ?peinture wdt:P195 ?lieux.
+     SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".}
+} 
 '''
 ### Markdown
 
