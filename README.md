@@ -1,11 +1,9 @@
 ## voici un exemple de requête wikidata
-
 '''sparql 
 Select DISTINCT ?peinture ?peintureLabel ?lieux ?lieuxLabel
-where { ?peinture wdt:P170 wd:Q296. ?peinture wdt:P195 ?lieux.
+       where { ?peinture wdt:P170 wd:Q296. ?peinture wdt:P195 ?lieux.
 
-SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".}
-
+       SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".}
 }
 '''
 ### Markdown
