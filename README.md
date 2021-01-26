@@ -1,11 +1,11 @@
 ## voici un exemple de requête wikidata
-'''sparlql
+...sparlql
 Select DISTINCT ?peinture ?peintureLabel ?lieux ?lieuxLabel
 where { ?peinture wdt:P170 wd:Q296. ?peinture wdt:P195 ?lieux.
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" }
 } 
-'''
+...
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
