@@ -1,4 +1,5 @@
 ## voici un exemple de requête wikidata
+
 '''sparql
 
 SELECT DISTINCT ?peinture ?peintureLabel ?lieux ?lieuxLabel
